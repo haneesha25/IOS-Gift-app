@@ -1,7 +1,6 @@
 //
 //  UIViewController+Extensions.swift
 
-
 import UIKit
 import SafariServices
 import AVKit
