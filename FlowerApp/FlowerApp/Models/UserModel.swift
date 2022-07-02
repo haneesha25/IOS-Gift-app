@@ -5,7 +5,6 @@
 import Foundation
 
 
-
 class UserModel {
     var docID: String
     var fName: String
