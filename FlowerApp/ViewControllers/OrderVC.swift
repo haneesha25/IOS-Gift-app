@@ -17,6 +17,9 @@ class OrderVC: UIViewController {
     
     //MARK:- ViewLifeCycle Methods
     
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tblList.delegate = self
@@ -28,6 +31,8 @@ class OrderVC: UIViewController {
         super.viewWillAppear(true)
         self.navigationController?.navigationBar.isHidden = true
     }
+    
+    
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(true)
