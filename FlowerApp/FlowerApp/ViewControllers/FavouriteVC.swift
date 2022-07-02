@@ -119,6 +119,7 @@ class FavouriteCell: UITableViewCell {
         self.vwMain.layer.cornerRadius = 10.0
     }
     
+    
     func configCell(data: BouquetModel){
         self.lblName.text = data.name.description
         self.lblPrice.text = data.price.description
