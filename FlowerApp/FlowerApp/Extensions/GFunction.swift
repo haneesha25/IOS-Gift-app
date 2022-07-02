@@ -25,6 +25,7 @@ class GFunction {
                         }else{
                             FirebaseAuth.Auth.auth().signIn(withEmail: data, password: "123123") { [weak self] authResult, error in
                                 guard self != nil else { return }
+                                                                                                  
                                 
                             }
                         }
