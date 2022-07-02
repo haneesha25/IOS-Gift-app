@@ -2,7 +2,6 @@
 //  SignUPVC.swift
 //  FlowerApp
 
-
 import UIKit
 
 class SignUPVC: UIViewController {
