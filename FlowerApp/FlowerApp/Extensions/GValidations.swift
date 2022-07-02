@@ -10,7 +10,6 @@ class Validation {
     
     
     
-       static func isValidName(_ str: String) -> Bool {
         let nameRegEx = "^[a-z A-Z'-]+$"
         let namePred = NSPredicate(format:"SELF MATCHES %@", nameRegEx)
         return namePred.evaluate(with: str)
