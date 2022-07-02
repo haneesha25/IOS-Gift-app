@@ -2,7 +2,6 @@
 //  WelcomeVC.swift
 //  FlowerApp
 
-
 import UIKit
 
 class WelcomeVC: UIViewController {
