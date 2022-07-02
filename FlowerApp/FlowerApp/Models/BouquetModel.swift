@@ -22,3 +22,4 @@ class BouquetModel {
         self.image = image
     }
 }
+
