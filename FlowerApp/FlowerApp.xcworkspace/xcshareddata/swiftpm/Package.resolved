@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "sendgrid-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/scottkawai/sendgrid-swift.git",
+      "state" : {
+        "revision" : "74934cafe4f9d202ee223113e56f0ad300754d14",
+        "version" : "2.2.1"
+      }
+    }
+  ],
+  "version" : 2
+}
