@@ -21,4 +21,3 @@ class FlowerModel {
         self.isSelected = false
     }
 }
-
