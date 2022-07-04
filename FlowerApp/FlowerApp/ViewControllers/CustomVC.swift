@@ -203,7 +203,6 @@ extension CustomVC: UITableViewDelegate, UITableViewDataSource {
         }
     }
 }
-
 class CustomCell: UITableViewCell {
     //MARK:- Outlets
     @IBOutlet weak var lblName: UILabel!
