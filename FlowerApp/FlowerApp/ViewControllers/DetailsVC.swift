@@ -82,7 +82,7 @@ class DetailsVC: UIViewController {
                 print("Error adding document: \(err)")
             } else {
                 print("Document added with ID: \(ref!.documentID)")
-                Alert.shared.showAlert(message: "Cake has been added into Favourite!!!") { (true) in
+                Alert.shared.showAlert(message: "flower has been added into Favourite!!!") { (true) in
                     UIApplication.shared.setTab()
                 }
             }
@@ -101,7 +101,7 @@ class DetailsVC: UIViewController {
                 self.addToFav(data: data, email: email)
             }else{
                 if !self.isFav {
-                    Alert.shared.showAlert(message: "Cake has been already existing into Favourite!!!", completion: nil)
+                    Alert.shared.showAlert(message: "Flower has been already existing into Favourite!!!", completion: nil)
                 }
                 
             }
@@ -153,7 +153,7 @@ class DetailsVC: UIViewController {
         let name = fullName
         let email = email
         
-        let devemail = "2095405@cegepgim.ca"
+        let devemail = "@cegepgim.ca"
         
         let data : [String:String] = [
             "name" : name,
@@ -166,7 +166,7 @@ class DetailsVC: UIViewController {
         session.authentication = Authentication.apiKey(apikey)
         
         let from = Address(email: devemail, name: name)
-         let template = Email(personalizations: [personalization], from: from, templateID: "d-82b56f27edcf40428cfe7223504f5fe1", subject: "Your Order has been placed!!!")
+         let template = Email(personalizations: [personalization], from: from, templateID: " hhh", subject: "Your Order has been placed!!!")
         
         do {
             try session.send(request: template, completionHandler: { (result) in
