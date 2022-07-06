@@ -34,7 +34,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     override init() {
         super.init()
-        GIDSignIn.sharedInstance().clientID = "123447265393-764p9fjvdtnr29hahse6lv5sied97s3f.apps.googleusercontent.com"
+        GIDSignIn.sharedInstance().clientID = " "
         GIDSignIn.sharedInstance().delegate = self
     }
 
@@ -54,7 +54,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
-        if url.scheme?.localizedCaseInsensitiveCompare("fb1397278210755180") == .orderedSame {
+        if url.scheme?.localizedCaseInsensitiveCompare("fb") == .orderedSame {
             return ApplicationDelegate.shared.application(UIApplication.shared, open: url, sourceApplication: nil, annotation: [UIApplication.OpenURLOptionsKey.annotation])
         }
         return GIDSignIn.sharedInstance().handle(url)
