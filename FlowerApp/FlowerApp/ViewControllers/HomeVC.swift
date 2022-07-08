@@ -28,7 +28,10 @@ class HomeVC: UIViewController {
         self.navigationController?.navigationBar.isHidden = true
     }
     
-    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(true)
+        self.navigationController?.navigationBar.isHidden = false
+    }
 
 }
 
