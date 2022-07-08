@@ -57,26 +57,7 @@ class CustomVC: UIViewController {
     
     //MARK:- ViewLifeCycle Methods
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.tblList.delegate = self
-        self.tblList.dataSource = self
-        self.vwNotes.isHidden = true
-        // Do any additional setup after loading the view.
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(true)
-        self.getData()
-        self.navigationController?.navigationBar.isHidden = true
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(true)
-        self.navigationController?.navigationBar.isHidden = false
-    }
-
-}
+   
 
 
 extension CustomVC: UITableViewDelegate, UITableViewDataSource {
