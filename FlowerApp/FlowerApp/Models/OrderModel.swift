@@ -4,7 +4,6 @@
 
 import Foundation
 
-
 class OrderModel {
     var docID: String
     var name: String
