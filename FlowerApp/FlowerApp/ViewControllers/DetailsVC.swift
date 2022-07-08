@@ -161,4 +161,29 @@ class DetailsVC: UIViewController {
         ]
         
         
-       
+       let personalization = TemplatedPersonalization(dynamicTemplateData: data, recipients: email)
+        let session = Session()
+        session.authentication = Authentication.apiKey(apikey)
+        
+        let from = Address(email: devemail, name: name)
+         let template = Email(personalizations: [personalization], from: from, templateID: " hhh", subject: "Your Order has been placed!!!")
+        
+        do {
+            try session.send(request: template, completionHandler: { (result) in
+                switch result {
+                case .success(let response):
+                    print("Response : \(response)")
+                    completion(.success(()))
+                    
+                case .failure(let error):
+                    print("Error : \(error)")
+                    completion(.failure(error))
+                }
+            })
+        }catch(let error){
+            print("ERROR: ")
+            completion(.failure(error))
+        }
+    }
+}
+ 
