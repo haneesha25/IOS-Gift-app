@@ -100,13 +100,7 @@ extension FavouriteVC: UITableViewDelegate, UITableViewDataSource {
 }
 
 
-class FavouriteCell: UITableViewCell {
-    //MARK:- Outlets
-    @IBOutlet weak var vwMain: UIView!
-    @IBOutlet weak var lblName: UILabel!
-    @IBOutlet weak var lblPrice: UILabel!
-    @IBOutlet weak var imgData: UIImageView!
-    @IBOutlet weak var btnRemove: UIButton!
+
     
     
     //MARK:- Class Variables
