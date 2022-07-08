@@ -42,7 +42,7 @@ class CustomVC: UIViewController {
         }else if sender == btnPlaceOrder {
             if self.count > 0 {
                 var finalAmount = (self.count * 50)
-                finalAmount = self.btnIsCover.isSelected ? (finalAmount + 50) : finalAmount
+                finalAmount = self.btnIsCover.isSelected ? (finalAmount + 10) : finalAmount
                 finalAmount = self.btnISNotes.isSelected ? (finalAmount + 10) : finalAmount
                     
                 if !GFunction.user.email.isEmpty {
@@ -166,11 +166,11 @@ extension CustomVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func sendEmail(fullName:String, email:String, completion: @escaping (Result<Void,Error>) -> Void) {
-        let apikey = "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"
+        let apikey = ""
         let name = fullName
         let email = email
         
-        let devemail = "2095405@cegepgim.ca"
+        let devemail = "2"
         
         let data : [String:String] = [
             "name" : name,
@@ -183,7 +183,7 @@ extension CustomVC: UITableViewDelegate, UITableViewDataSource {
         session.authentication = Authentication.apiKey(apikey)
         
         let from = Address(email: devemail, name: name)
-         let template = Email(personalizations: [personalization], from: from, templateID: "d-82b56f27edcf40428cfe7223504f5fe1", subject: "Your Order has been placed!!!")
+         let template = Email(personalizations: [personalization], from: from, templateID: "d", subject: "Your Order has been placed!!!")
         
         do {
             try session.send(request: template, completionHandler: { (result) in
