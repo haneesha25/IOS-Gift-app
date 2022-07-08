@@ -149,11 +149,11 @@ class DetailsVC: UIViewController {
     }
     
     func sendEmail(fullName:String, email:String, completion: @escaping (Result<Void,Error>) -> Void) {
-        let apikey = 
+        let apikey = ****
         let name = fullName
         let email = email
         
-        let devemail = "@cegepgim.ca"
+        let devemail = "***"
         
         let data : [String:String] = [
             "name" : name,
